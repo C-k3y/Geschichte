@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://soivant.co/sitemap.xml
