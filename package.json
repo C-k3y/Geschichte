@@ -1,9 +1,9 @@
 {
-  "name": "soivant-landing",
+  "name": "geschichte-landing",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "SOIVANT — Wear Your Story. Landing page for the Geschichte line launch.",
+  "description": "GESCHICHTE — Wear Your Story. Landing page for the Geschichte line launch.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
