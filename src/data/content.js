@@ -10,15 +10,15 @@
  */
 
 export const brand = {
-  name: 'SOIVANT',
+  name: 'GESCHICHTE',
   tagline: 'Wear your story.',
   lineName: 'Geschichte',
-  lineLabel: 'The Geschichte Line',
+  lineLabel: 'The Geschichte Line', //to be renamed as per the client's actual drop's name
   strapline: 'Stories woven. Purpose worn.',
-  instagram: '@soivant.co',
-  instagramUrl: 'https://instagram.com/soivant.co',
+  instagram: '@geschichte.co',
+  instagramUrl: 'https://instagram.com/geschichte.co',
   // TODO: update this to the real store URL when the backend ships
-  storeUrl: 'https://soivant.co/shop',
+  storeUrl: 'https://geschichte.co/shop',
 };
 
 // ISO date the countdown targets. Change this one value to move the launch.
@@ -81,6 +81,7 @@ export const products = [
     alt: 'Geschichte Sweatpant — tapered fit, woven leather patch detail',
     swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
     locked: true,
+    // TODO: add href pointing to individual product page when backend is ready
     href: '#',
   },
 ];
@@ -94,7 +95,7 @@ export const liveCopy = {
   eyebrow: 'We are live',
   heading: 'Geschichte is here.',
   subheading: 'Stories woven. Purpose worn.',
-  body: 'The wait is over. The Geschichte line is now open — shop the collection and wear your story.',
+  body: 'The wait is over. GESCHICHTE is now open — shop the collection and wear your story.',
   ctaLabel: 'Shop the collection',
   secondaryLabel: 'Follow us on Instagram',
 };
@@ -102,8 +103,8 @@ export const liveCopy = {
 export const waitlistCopy = {
   eyebrow: 'Launching soon',
   heading: 'Be first through the door.',
-  body: 'Join the list and get early access before the Geschichte line opens to the public — plus one email, the day it drops.',
+  body: 'Join the list and get early access before its open to the public — plus one email, the day it drops.',
   ctaLabel: 'Notify me',
   successHeading: "You're on the list.",
-  successBody: "We'll email you the moment the Geschichte line is live.",
+  successBody: "We'll email you the moment we launch.",
 };
