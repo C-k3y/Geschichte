@@ -1,4 +1,4 @@
-# SOIVANT — Wear Your Story
+# GESCHICHTE — Wear Your Story
 
 Landing page for the **Geschichte** line launch. Built with React + Vite + Tailwind CSS.
 
