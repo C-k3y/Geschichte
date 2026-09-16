@@ -81,8 +81,8 @@ export default function CollectionPreview({ isLive }) {
           </div>
           <p className="text-sm text-ash max-w-xs">
             {isLive
-              ? 'The Geschichte line is live. Explore the two pieces from the opening drop.'
-              : 'Two pieces from the opening drop — full imagery and pricing unlock the moment the Geschichte line goes live.'}
+              ? 'GESCHICHTE is live. Explore the two pieces from the opening drop.'
+              : 'Two pieces from the opening drop — full imagery and pricing unlock the moment we launch'}
           </p>
         </div>
 
