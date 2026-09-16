@@ -29,13 +29,13 @@ export default function Footer() {
 
         <div className="flex items-center gap-6 text-ash text-sm">
           <a
-            href="https://soivant.co"
+            href="https://geschichte.co"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 hover:text-champagne transition-colors"
           >
             <GlobeIcon className="w-4 h-4" />
-            soivant
+            geschichte
           </a>
           <a
             href={brand.instagramUrl}
