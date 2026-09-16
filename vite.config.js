@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Deployment assumption: site lives at the root of the domain (soivant.co/).
+  // Deployment assumption: site lives at the root of the domain (geschichte.co/).
   // If you ever deploy to a subdirectory, update this accordingly.
   base: '/',
   server: {
