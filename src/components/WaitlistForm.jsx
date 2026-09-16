@@ -23,7 +23,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export default function WaitlistForm({
   ctaLabel = 'Notify me',
   successHeading = "You're on the list.",
-  successBody = "We'll email you the moment the Geschichte line is live.",
+  successBody = "We'll email you the moment we launch.",
 }) {
   const [email, setEmail] = useState('');
   const [honeypot, setHoneypot] = useState('');
