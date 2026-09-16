@@ -20,7 +20,7 @@ export default function Countdown({ targetIso }) {
   if (time.isComplete) {
     return (
       <p className="font-display italic text-champagne-bright text-lg tracking-wide">
-        The Geschichte line is live.
+        GESCHICHTE is live.
       </p>
     );
   }
