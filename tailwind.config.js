@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ---- SOIVANT brand tokens ----------------------------------------
+        // ---- GESCHICHTE brand tokens ----------------------------------------
         // Derived from the Geschichte teaser poster: near-black ground,
         // weathered stone display type, a champagne-gold stitch/script
         // accent, and a warm off-white for the torn-paper "seam" motif.
@@ -30,7 +30,7 @@ export default {
         seam: '#F2EEE3', // torn-paper crack line, hairline dividers
       },
       fontFamily: {
-        // Display serif — the weathered "SOIVANT" / "GESCHICHTE" wordmarks
+        // Display serif — the weathered "GESCHICHTE" / "GESCHICHTE" wordmarks
         display: ['"Bodoni Moda"', 'Georgia', 'serif'],
         // Brush/script accent — echoes the "Soon" cursive on the poster
         script: ['"Marck Script"', 'cursive'],
