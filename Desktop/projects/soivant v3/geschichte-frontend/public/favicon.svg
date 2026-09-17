@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" fill="#0B0A08"/>
+  <!-- Outer decorative border -->
+  <rect x="3" y="3" width="42" height="42" stroke="#8C7350" stroke-width="0.75" fill="none"/>
+  <!-- Inner border -->
+  <rect x="5" y="5" width="38" height="38" stroke="#8C7350" stroke-width="0.4" fill="none" opacity="0.5"/>
+  <!-- S letterform -->
+  <text
+    x="24"
+    y="33"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="28"
+    font-weight="400"
+    fill="#B99A66"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >S</text>
+</svg>
