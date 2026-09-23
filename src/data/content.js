@@ -22,7 +22,7 @@ export const brand = {
 };
 
 // ISO date the countdown targets. Change this one value to move the launch.
-export const launchDate = '2026-11-14T09:00:00+03:00'; // East Africa Time (EAT, UTC+3)
+export const launchDate = '2026-09-25T18:00:00+03:00'; // East Africa Time (EAT, UTC+3){Official Launch date to 25th Sep}
 
 // Pre-launch nav (shown during countdown)
 export const navLinks = [
