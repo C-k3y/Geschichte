@@ -21,14 +21,33 @@ function ProductCard({ product, isLive }) {
       className={`group relative overflow-hidden border border-white/10 transition-all duration-700
                   ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
-      {/* Garment swatch — swap for <img> when photography is ready */}
+      {/* Garment photography — falls back to the gradient swatch + monogram
+          for any future product added before its photography is ready. */}
       <div
-        className={`aspect-[4/5] bg-gradient-to-br ${product.swatch} flex items-center justify-center
-                    transition-transform duration-700 group-hover:scale-[1.03]`}
+        className={`aspect-[4/5] bg-gradient-to-br ${product.swatch} relative flex items-center
+                    justify-center p-6 overflow-hidden transition-transform duration-700
+                    group-hover:scale-[1.03]`}
         role="img"
         aria-label={product.alt}
       >
-        <span className="font-display italic text-6xl text-white/[0.06] select-none">G</span>
+        {product.badge && (
+          <span
+            className="absolute top-3 left-3 z-10 text-[10px] tracking-widest2 uppercase
+                       bg-champagne text-ink px-2.5 py-1 font-medium"
+          >
+            {product.badge}
+          </span>
+        )}
+        {product.image ? (
+          <img
+            src={product.image}
+            alt={product.alt}
+            loading="lazy"
+            className="w-full h-full object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.5)]"
+          />
+        ) : (
+          <span className="font-display italic text-6xl text-white/[0.06] select-none">G</span>
+        )}
       </div>
 
       {/* Pre-launch lock scrim — hidden when live */}
@@ -86,7 +105,7 @@ export default function CollectionPreview({ isLive }) {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} isLive={isLive} />
           ))}
