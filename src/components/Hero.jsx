@@ -9,8 +9,8 @@ import SeamDivider from './SeamDivider.jsx';
  * countdown and waitlist CTA.
  *
  * Post-launch mode (`isLive = true`): a full-bleed "We're Live" headline
- * with a direct link to the store, so visitors know immediately where to go.
- * This is the gateway — the real site lives at `brand.storeUrl`.
+ * whose CTA scrolls straight to the in-page Shop (#shop) — the shop lives
+ * on this same page now, no external domain required.
  */
 export default function Hero({ isLive }) {
   return (
@@ -62,7 +62,7 @@ export default function Hero({ isLive }) {
               style={{ animationDelay: '300ms' }}
             >
               <a
-                href={brand.storeUrl}
+                href="#shop"
                 className="inline-block bg-champagne text-ink text-xs tracking-widest2 uppercase
                            font-medium px-10 py-4 hover:bg-champagne-bright transition-colors"
               >
