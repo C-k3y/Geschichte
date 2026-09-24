@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { brand, navLinks, liveNavLinks } from '../data/content.js';
+import CartButton from './CartButton.jsx';
 
 /**
  * Navbar
  * ---------------------------------------------------------------------------
  * Pre-launch: standard anchor links + "Notify me" CTA → #waitlist
- * Post-launch: links update to include #shop, CTA becomes "Shop Now" → storeUrl
+ * Post-launch: links update to include #shop, CTA becomes "Shop Now" → #shop
+ * (the live shop lives on this same page — see src/components/Shop.jsx)
  *
  * Mobile sheet now uses a CSS max-height transition instead of a hard toggle,
  * so it slides in/out smoothly rather than snapping.
@@ -30,7 +32,7 @@ export default function Navbar({ isLive }) {
 
   const links = isLive ? liveNavLinks : navLinks;
   const ctaLabel = isLive ? 'Shop Now' : 'Notify me';
-  const ctaHref = isLive ? brand.storeUrl : '#waitlist';
+  const ctaHref = isLive ? '#shop' : '#waitlist';
 
   return (
     <header
@@ -56,14 +58,16 @@ export default function Navbar({ isLive }) {
           ))}
         </ul>
 
-        <a
-          href={ctaHref}
-          {...(isLive ? { target: '_blank', rel: 'noreferrer' } : {})}
-          className="hidden md:inline-block text-xs tracking-widest2 uppercase border border-champagne-muted
-                     px-5 py-2.5 text-champagne hover:bg-champagne hover:text-ink transition-colors"
-        >
-          {ctaLabel}
-        </a>
+        <div className="hidden md:flex items-center gap-6">
+          {isLive && <CartButton />}
+          <a
+            href={ctaHref}
+            className="text-xs tracking-widest2 uppercase border border-champagne-muted
+                       px-5 py-2.5 text-champagne hover:bg-champagne hover:text-ink transition-colors"
+          >
+            {ctaLabel}
+          </a>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -85,7 +89,7 @@ export default function Navbar({ isLive }) {
         id="mobile-menu"
         ref={menuRef}
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out
-                    ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                    ${open ? 'max-h-[30rem] opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="bg-ink border-t border-white/5 px-6 py-8 flex flex-col gap-6">
           {links.map((link) => (
@@ -98,9 +102,18 @@ export default function Navbar({ isLive }) {
               {link.label}
             </a>
           ))}
+          {isLive && (
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              className="flex items-center gap-3 text-sm tracking-widest2 uppercase text-bone hover:text-champagne transition-colors"
+            >
+              <CartButton />
+              My Collection
+            </button>
+          )}
           <a
             href={ctaHref}
-            {...(isLive ? { target: '_blank', rel: 'noreferrer' } : {})}
             onClick={() => setOpen(false)}
             className="text-sm tracking-widest2 uppercase text-champagne border border-champagne-muted px-5 py-3 text-center
                        hover:bg-champagne hover:text-ink transition-colors"
