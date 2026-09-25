@@ -20,7 +20,7 @@ export const brand = {
   // TODO(client): replace with the real WhatsApp Business number that
   // receives orders. Digits only — country code, no leading "+" or "0".
   // Example for a Kenyan number 0712 345 678 → '254712345678'.
-  whatsappNumber: '254700000000',
+  whatsappNumber: '254795432090',
   // TODO: update this to the real store URL only if/when the shop moves to
   // its own domain. The live shop itself no longer depends on this — it's
   // rendered in-page at #shop, so the site works today with no domain setup.
@@ -85,7 +85,7 @@ export const products = [
     swatch: 'from-[#211d16] via-[#171410] to-[#0b0a08]',
     // TODO(client): confirm real retail price. Whole units, no decimals —
     // formatPrice() below handles currency display.
-    price: 4500,
+    price: 1500,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
@@ -99,7 +99,7 @@ export const products = [
     image: '/Black_Sweatpant-removebg-preview.png',
     swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
     // TODO(client): confirm real retail price.
-    price: 3200,
+    price: 1200,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
@@ -113,7 +113,7 @@ export const products = [
     image: '/Black_Fleece-removebg-preview.png',
     swatch: 'from-[#1f1b14] via-[#16130e] to-[#0b0a08]',
     // TODO(client): confirm real retail price.
-    price: 3800,
+    price: 1400,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
@@ -127,7 +127,7 @@ export const products = [
     image: '/Black_Pants-removebg-preview.png',
     swatch: 'from-[#1a1712] via-[#141109] to-[#0b0a08]',
     // TODO(client): confirm real retail price.
-    price: 3500,
+    price: 1300,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
@@ -138,12 +138,12 @@ export const products = [
     name: 'Geschichte Tracksuit Set',
     detail: 'Matching hoodie & jogger set · brand monogram · relaxed fit throughout',
     alt: 'Geschichte Tracksuit Set — matching hoodie and joggers, front view',
-    image: '/Full_Black-removebg-preview.png',
+    image: '/full-black-set-removebg-preview.png',
     swatch: 'from-[#1a1a1f] via-[#121216] to-[#08080a]',
     badge: 'Set',
     // TODO(client): confirm real retail price — likely a bundle discount
     // versus buying the hoodie and a pair of joggers separately.
-    price: 7500,
+    price: 2500,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
