@@ -1,6 +1,7 @@
 # GESCHICHTE — Wear Your Story
 
 Landing page for the **Geschichte** line launch. Built with React + Vite + Tailwind CSS.
+[![Live Site](https://img.shields.io/badge/visit-live%20site-gold?style=flat-square)](https://geschichte-gamma.vercel.app/)
 
 ## Design direction
 
