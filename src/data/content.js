@@ -15,15 +15,13 @@ export const brand = {
   lineName: 'Geschichte',
   lineLabel: 'The Geschichte Line', //to be renamed as per the client's actual drop's name
   strapline: 'Stories woven. Purpose worn.',
-  instagram: '@geschichte.co',
-  instagramUrl: 'https://instagram.com/geschichte.co',
+  instagram: '@soi_vant',
+  instagramUrl: 'https://instagram.com/soi_vant/?hl=en',
   // TODO(client): replace with the real WhatsApp Business number that
-  // receives orders. Digits only — country code, no leading "+" or "0".
-  // Example for a Kenyan number 0712 345 678 → '254712345678'.
-  whatsappNumber: '254795432090',
+  // receives orders.
+  whatsappNumber: '254712210612',
   // TODO: update this to the real store URL only if/when the shop moves to
-  // its own domain. The live shop itself no longer depends on this — it's
-  // rendered in-page at #shop, so the site works today with no domain setup.
+  // its own domain.
   storeUrl: 'https://geschichte.co/shop',
 };
 
@@ -44,10 +42,7 @@ export const liveNavLinks = [
   { label: 'Shop', href: '#shop' },
 ];
 
-// The three-line poster copy — "Every scar. Every lesson. Every victory." —
-// expanded into a real manifesto grid. Order carries meaning here: it's a
-// chronology (wound → meaning → outcome), so numbering the pillars is
-// justified rather than decorative.
+
 export const pillars = [
   {
     mark: 'I',
@@ -77,14 +72,52 @@ export const SIZES = ['S', 'M', 'L'];
 // of this flag, since it only appears once `isLive` is already true.
 export const products = [
   {
-    id: 'hoodie-geschichte',
-    name: 'Geschichte Hoodie',
+    id: 'black-hoodie-geschichte',
+    name: 'Geschichte Black Hoodie',
     detail: 'Heavyweight fleece · embroidered monogram · raw hem drawcord',
-    alt: 'Geschichte Hoodie in heavyweight fleece — front view',
+    alt: 'Geschichte Black Hoodie in heavyweight fleece — front view',
     image: '/Black_Hoodie-removebg-preview.png',
     swatch: 'from-[#211d16] via-[#171410] to-[#0b0a08]',
-    // TODO(client): confirm real retail price. Whole units, no decimals —
     // formatPrice() below handles currency display.
+    price: 2500,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  { //grey hoodie
+    id: 'grey-hoodie-geschichte',
+    name: 'Geschichte Grey Hoodie',
+    detail: 'Heavyweight fleece · embroidered monogram · raw hem drawcord',
+    alt: 'Geschichte Grey Hoodie in heavyweight fleece — front view',
+    image: '/grey_hoodie-removebg-preview.png',
+    swatch: 'from-[#211d16] via-[#171410] to-[#0b0a08]',
+    price: 2500,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {
+    id: 'black-vest-hoodie-geschichte',
+    name: 'Geschichte Black Vest Hoodie',
+    detail: 'Sleeveless heavyweight fleece · brand monogram · relaxed drop shoulder',
+    alt: 'Geschichte Black Vest Hoodie — sleeveless fleece, front view',
+    image: '/Black_Fleece-removebg-preview.png',
+    swatch: 'from-[#1f1b14] via-[#16130e] to-[#0b0a08]',
+    price: 1500,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {//grey fleece
+    id: 'grey-vest-hoodie-geschichte',
+    name: 'Geschichte Grey Vest Hoodie',
+    detail: 'Tapered fit · woven leather patch · deep side pockets',
+    alt: 'Geschichte Grey Vest Hoodie — tapered fit, woven leather patch detail',
+    image: '/grey_fleece-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
     price: 1500,
     currency: 'KES',
     sizes: SIZES,
@@ -92,58 +125,110 @@ export const products = [
     href: '#shop',
   },
   {
-    id: 'sweatpant-geschichte',
-    name: 'Geschichte Sweatpant',
+    id: 'black-sweatpant-geschichte',
+    name: 'Geschichte Black Sweatpant',
     detail: 'Tapered fit · woven leather patch · deep side pockets',
-    alt: 'Geschichte Sweatpant — tapered fit, woven leather patch detail',
+    alt: 'Geschichte Black Sweatpant — tapered fit, woven leather patch detail',
     image: '/Black_Sweatpant-removebg-preview.png',
     swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
-    // TODO(client): confirm real retail price.
-    price: 1200,
+    price: 2000,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {//grey sweatpant
+    id: 'grey-sweatpant-geschichte',
+    name: 'Geschichte Grey Sweatpant',
+    detail: 'Tapered fit · woven leather patch · deep side pockets',
+    alt: 'Geschichte Grey Sweatpant — tapered fit, woven leather patch detail',
+    image: '/grey_sweatpant-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
+    price: 2000,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
     href: '#shop',
   },
   {
-    id: 'vest-hoodie-geschichte',
-    name: 'Geschichte Vest Hoodie',
-    detail: 'Sleeveless heavyweight fleece · brand monogram · relaxed drop shoulder',
-    alt: 'Geschichte Vest Hoodie — sleeveless fleece, front view',
-    image: '/Black_Fleece-removebg-preview.png',
-    swatch: 'from-[#1f1b14] via-[#16130e] to-[#0b0a08]',
-    // TODO(client): confirm real retail price.
-    price: 1400,
-    currency: 'KES',
-    sizes: SIZES,
-    locked: true,
-    href: '#shop',
-  },
-  {
-    id: 'wide-leg-geschichte',
-    name: 'Geschichte Wide-Leg Pants',
+    id: 'black-wide-leg-geschichte',
+    name: 'Geschichte Black Wide-Leg Pants',
     detail: 'Flared silhouette · elastic drawstring waist · brand monogram',
-    alt: 'Geschichte Wide-Leg Pants — flared silhouette, front view',
+    alt: 'Geschichte Black Wide-Leg Pants — flared silhouette, front view',
     image: '/Black_Pants-removebg-preview.png',
     swatch: 'from-[#1a1712] via-[#141109] to-[#0b0a08]',
-    // TODO(client): confirm real retail price.
-    price: 1300,
+    price: 2000,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {//grey pants
+    id: 'grey-wide-leg-geschichte',
+    name: 'Geschichte Grey Wide-Leg',
+    detail: 'Tapered fit · woven leather patch · deep side pockets',
+    alt: 'Geschichte Grey Wide-Leg — tapered fit, woven leather patch detail',
+    image: '/grey_pants-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
+    price: 2000,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {//black short
+    id: 'black-short-geschichte',
+    name: 'Geschichte Black Shorts',
+    detail: 'Tapered fit · woven leather patch · deep side pockets',
+    alt: 'Geschichte Black Shorts — tapered fit, woven leather patch detail',
+    image: '/black_short-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
+    price: 1500,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {//grey short
+    id: 'grey-short-geschichte',
+    name: 'Geschichte Grey Shorts',
+    detail: 'Tapered fit · woven leather patch · deep side pockets',
+    alt: 'Geschichte Grey Shorts — tapered fit, woven leather patch detail',
+    image: '/grey_shorts-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
+    price: 1500,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
     href: '#shop',
   },
   {
-    id: 'tracksuit-set-geschichte',
-    name: 'Geschichte Tracksuit Set',
+    id: 'black-tracksuit-set-geschichte',
+    name: 'Geschichte Black Tracksuit Set',
     detail: 'Matching hoodie & jogger set · brand monogram · relaxed fit throughout',
-    alt: 'Geschichte Tracksuit Set — matching hoodie and joggers, front view',
+    alt: 'Geschichte Black Tracksuit Set — matching hoodie and joggers, front view',
     image: '/full-black-set-removebg-preview.png',
-    swatch: 'from-[#1a1a1f] via-[#121216] to-[#08080a]',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
     badge: 'Set',
-    // TODO(client): confirm real retail price — likely a bundle discount
+    //a bundle discount
     // versus buying the hoodie and a pair of joggers separately.
-    price: 2500,
+    price: 4300,
+    currency: 'KES',
+    sizes: SIZES,
+    locked: true,
+    href: '#shop',
+  },
+  {
+    id: 'grey-tracksuit-set-geschichte',
+    name: 'Geschichte Grey Tracksuit Set',
+    detail: 'Matching hoodie & jogger set · brand monogram · relaxed fit throughout',
+    alt: 'Geschichte Grey Tracksuit Set — matching hoodie and joggers, front view',
+    image: '/grey_tracksuit-removebg-preview.png',
+    swatch: 'from-[#1c1913] via-[#151209] to-[#0b0a08]',
+    badge: 'Set',
+    //a bundle discount
+    // versus buying the hoodie and a pair of joggers separately.
+    price: 4300,
     currency: 'KES',
     sizes: SIZES,
     locked: true,
